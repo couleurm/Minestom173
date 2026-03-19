@@ -11,7 +11,7 @@ import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenHellLava173;
 import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenLightStone1173;
 import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenLightStone2173;
 import net.minestom.server.instance.Chunk;
-import net.minestom.server.instance.IChunkLoader;
+import net.minestom.server.instance.ChunkLoader;
 import net.minestom.server.instance.Instance;
 import net.minestom.server.instance.block.Block;
 import net.minestom.server.world.biome.Biome;
@@ -20,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class ChunkProviderHell173 implements IChunkLoader, OldChunkGenerator {
+public class ChunkProviderHell173 implements ChunkLoader, OldChunkGenerator {
 
     private final Random random;
     private final NoiseGeneratorOctaves173 terrainNoise2Generator;

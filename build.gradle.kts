@@ -10,11 +10,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly("net.minestom:minestom:2025.07.27-1.21.8")
+    compileOnly("net.minestom:minestom:2026.03.03-1.21.11")
 }
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21)) // Minestom has a minimum Java version of 21
+        languageVersion.set(JavaLanguageVersion.of(25)) // Minestom has a minimum Java version of 25
     }
 }

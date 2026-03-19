@@ -19,7 +19,7 @@ import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenPumpkin173;
 import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenReed173;
 import ca.spottedleaf.oldgenerator.generator.b173.populator.WorldGenerator173;
 import net.minestom.server.instance.Chunk;
-import net.minestom.server.instance.IChunkLoader;
+import net.minestom.server.instance.ChunkLoader;
 import net.minestom.server.instance.Instance;
 import net.minestom.server.instance.block.Block;
 import net.minestom.server.world.biome.Biome;
@@ -28,7 +28,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Random;
 
-public class ChunkProviderOverworld173 implements IChunkLoader, OldChunkGenerator {
+public class ChunkProviderOverworld173 implements ChunkLoader, OldChunkGenerator {
 
     private final Random random;
 

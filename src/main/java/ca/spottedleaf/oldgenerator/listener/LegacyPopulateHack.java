@@ -5,7 +5,7 @@ import net.minestom.server.event.EventNode;
 import net.minestom.server.event.instance.InstanceChunkLoadEvent;
 import net.minestom.server.event.trait.InstanceEvent;
 import net.minestom.server.instance.Chunk;
-import net.minestom.server.instance.IChunkLoader;
+import net.minestom.server.instance.ChunkLoader;
 import net.minestom.server.instance.InstanceContainer;
 import net.minestom.server.instance.batch.AbsoluteBlockBatch;
 import net.minestom.server.tag.Tag;
@@ -50,7 +50,7 @@ public class LegacyPopulateHack {
             final int centerX = center.getChunkX();
             final int centerZ = center.getChunkZ();
 
-            final IChunkLoader generator = world.getChunkLoader();
+            final ChunkLoader generator = world.getChunkLoader();
 
             if (!(generator instanceof OldChunkGenerator)) return; // not our generator
 
